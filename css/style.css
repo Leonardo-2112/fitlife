@@ -63,7 +63,7 @@ nav{
 }
 
 #nav-active{
-    border-bottom: 3px var(--primary-color);
+    border-bottom: 3px var(--primary-color) solid;
     color:var(--primary-color);
 }
 
