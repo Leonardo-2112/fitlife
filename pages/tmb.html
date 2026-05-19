@@ -57,18 +57,21 @@
                     <input type="number" id="age" placeholder="Ex: 25" required>
                 </div>
 
-                <button class="action-btn" type="submit">Calcular</button>
-                <a class="action-btn btn-back" href="../index.html">Voltar</a>
-            </form>
-            <div class="result-box">
-                <p>Gasto calórico basal</p>
-                <h2>0000</h2>
-                <p>Kcal/dia</p>
-            </div>
-            
-        </section>
-        
+          <button type="submit" class="action-btn" onclick="calculateTMB(event)">
+            Calcular Calorias
+          </button>
+          <a href="../index.html" class="action-btn btn-back">Voltar</a>
+        </form>
 
+        <div id="result" class="result-box">
+          <p>Gasto Calórico Basal:</p>
+          <h1 id="tmb-value" class="text-primary">0000</h1>
+          <p>Kcal/dia (Repouso)</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="../js/tmb.js"></script>
     </main>
 </body>
 
