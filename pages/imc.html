@@ -43,17 +43,24 @@
                     <input type="number" id="height" placeholder = "Ex: 1.75" required step="any">
                 </div>
 
-                <button class="action-btn" type="submit" onclick="calculateIMC()">Calcular</button>
-                <a class="action-btn btn-back" id="" href="../index.html">Voltar</a>
-            </form>
+                 <button
+            type="submit"
+            class="action-btn"
+            onclick="calculateIMC(event)"
+          >
+            Calcular
+          </button>
+          <a href="../index.html" class="action-btn btn-back">Voltar</a>
+        </form>
 
-            <div id="result" class="result-box">
-                <p>Seu IMC é</p>
-                <h2 id="imc-value">00.0</h2>
-                <p id="imc-desc">Classificação</p>
-            </div>
-        </section>      
+        <div id="result" class="result-box">
+          <p>Seu IMC é:</p>
+          <h1 id="imc-value">00.0</h1>
+          <p id="imc-desc">Normal</p>
+        </div>
+      </section>
     </main>
+
     <script src="../js/imc.js"></script>
 </body>
 
